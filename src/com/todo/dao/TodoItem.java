@@ -83,9 +83,9 @@ public class TodoItem {
 	@Override
 	public String toString() {
 		if(is_completed == 0)
-			return "[" + category + "] " + title + " - " + desc + " - " + due_date + " - " + current_date;
+			return id + " [" + category + "] " + title + " - " + desc + " - " + due_date + " - " + current_date;
 		else 
-			return "[" + category + "] " + title + "[V] - " + desc + " - " + due_date + " - " + current_date;
+			return id + " [" + category + "] " + title + "[V] - " + desc + " - " + due_date + " - " + current_date;
 	}
 	
 }

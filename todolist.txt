@@ -1,0 +1,50 @@
+{"id":1,"is_completed":1,"title":"기상","desc":"아침 8시 일어나기","current_date":"2021/09/25 22:48:01","category":"일상","due_date":"2021/09/24","location":"집","priority":"A"}
+{"id":2,"is_completed":0,"title":"취침하기","desc":"밤 11시 취침하기","current_date":"2021/09/25 22:47:30","category":"일상","due_date":"2021/09/25","location":"집","priority":"A"}
+{"id":3,"is_completed":1,"title":"샤워","desc":"기상 후 샤워하기","current_date":"2021/09/25 22:46:56","category":"일상","due_date":"2021/09/19","location":"집","priority":"A"}
+{"id":4,"is_completed":0,"title":"운동하기","desc":"평봉필드 2바퀴 돌기","current_date":"2021/09/25 22:39:34","category":"취미","due_date":"2021/10/10","location":"평봉필드","priority":"A"}
+{"id":5,"is_completed":0,"title":"독서","desc":"좋아하는 책 읽기","current_date":"2021/09/25 22:39:05","category":"취미","due_date":"2021/09/29","location":"도서관","priority":"A"}
+{"id":6,"is_completed":0,"title":"악기연주","desc":"기타 연주하기","current_date":"2021/09/25 22:38:51","category":"취미","due_date":"2021/09/30","location":"집","priority":"A"}
+{"id":7,"is_completed":0,"title":"음악감상","desc":"1시간 노래듣기","current_date":"2021/09/25 22:38:36","category":"취미","due_date":"2021/09/19","location":"집","priority":"A"}
+{"id":8,"is_completed":0,"title":"세미나발표","desc":"랩실 세미나 준비하기","current_date":"2021/09/25 22:28:31","category":"과제","due_date":"2021/09/28","location":"학교","priority":"A"}
+{"id":9,"is_completed":1,"title":"동아리회식","desc":"동아리 동기들과 밥먹기","current_date":"2021/09/25 22:27:49","category":"기타","due_date":"2021/09/29","location":"학관","priority":"A"}
+{"id":11,"is_completed":1,"title":"등산하기","desc":"심학산 등산하기","current_date":"2021/10/17 10:57:14","category":"운동","due_date":"2021/10/20","location":"심학산","priority":"B"}
+{"id":23,"is_completed":0,"title":"8주차과제하기","desc":"컴구 실프 과제 끝내기","current_date":"2021/10/17 15:15:06","category":"과제","due_date":"2021/10/25","location":"학교","priority":"B"}
+{"id":24,"is_completed":0,"title":"헬스장가기","desc":"운동하기","current_date":"2021/10/17 15:15:40","category":"운동","due_date":"2021/10/18","location":"헬스장","priority":"C"}
+{"id":25,"is_completed":0,"title":"자전거타기","desc":"자전거타고 1시간 운동하기","current_date":"2021/10/17 15:19:15","category":"운동","due_date":"2021/10/11","location":"공원","priority":"C"}
+{"id":26,"is_completed":0,"title":"제주도여행","desc":"제주도로 여행가기","current_date":"2021/10/17 15:19:42","category":"여행","due_date":"2021/11/1","location":"제주도","priority":"C"}
+{"id":27,"is_completed":0,"title":"영화보기","desc":"좋아하는 영화 보기","current_date":"2021/10/17 15:20:16","category":"취미","due_date":"2021/10/20","location":"집","priority":"B"}
+{"id":28,"is_completed":0,"title":"수영장등록하기","desc":"수영장에 회원 등록하기","current_date":"2021/10/17 15:20:55","category":"기타","due_date":"2021/11/2","location":"수영장","priority":"A"}
+{"id":29,"is_completed":0,"title":"치과가기","desc":"치과 갔다오기","current_date":"2021/10/17 15:21:46","category":"일상","due_date":"2021/10/29","location":"치과","priority":"A"}
+{"id":30,"is_completed":0,"title":"프로젝트완성하기","desc":"실프 프로젝트 완성하기","current_date":"2021/10/17 15:23:09","category":"과제","due_date":"2021/10/17","location":"학교","priority":"A"}
+{"id":31,"is_completed":0,"title":"운전면허취득","desc":"운전면허 취득하기","current_date":"2021/10/17 15:24:14","category":"기타","due_date":"2021/11/4","location":"운전면허학원","priority":"B"}
+{"id":32,"is_completed":0,"title":"옷쇼핑하기","desc":"옷사기","current_date":"2021/10/17 15:25:25","category":"일상","due_date":"2021/11/6","location":"집","priority":"C"}
+{"id":33,"is_completed":0,"title":"9주차과제하기","desc":"컴구 과제끝내기","current_date":"2021/10/17 15:27:16","category":"과제","due_date":"2021/10/30","location":"오석","priority":"A"}
+{"id":34,"is_completed":0,"title":"산책하기","desc":"산책하기","current_date":"2021/10/17 15:28:20","category":"일상","due_date":"2021/10/20","location":"한동","priority":"C"}
+{"id":35,"is_completed":0,"title":"자전거수리","desc":"자전거 고치기","current_date":"2021/10/17 15:29:57","category":"기타","due_date":"2021/10/20","location":"자전거용품점","priority":"B"}
+{"id":36,"is_completed":0,"title":"백준풀기","desc":"백준 문제풀기","current_date":"2021/10/17 15:30:45","category":"과제","due_date":"2021/10/28","location":"집","priority":"C"}
+{"id":37,"is_completed":0,"title":"방청소","desc":"방청소하기","current_date":"2021/10/17 15:32:24","category":"일상","due_date":"2021/10/19","location":"집","priority":"A"}
+{"id":38,"is_completed":0,"title":"미용실가기","desc":"미용실가서 머리 자르기","current_date":"2021/10/17 15:33:22","category":"일상","due_date":"2021/10/19","location":"미용실","priority":"C"}
+{"id":39,"is_completed":0,"title":"옷세탁하기","desc":"옷세탁하기","current_date":"2021/10/17 15:34:30","category":"일상","due_date":"2021/11/10","location":"세탁소","priority":"B"}
+{"id":40,"is_completed":0,"title":"샴푸구매하기","desc":"샴푸 새로 사기","current_date":"2021/10/17 15:35:29","category":"기타","due_date":"2021/10/25","location":"기숙사","priority":"C"}
+{"id":41,"is_completed":0,"title":"자바공부하기","desc":"자바공부하기","current_date":"2021/10/17 15:36:12","category":"과제","due_date":"2021/10/20","location":"오석","priority":"A"}
+{"id":42,"is_completed":0,"title":"달리기","desc":"학교주변 달리기","current_date":"2021/10/17 15:37:02","category":"운동","due_date":"2021/10/18","location":"학교","priority":"C"}
+{"id":43,"is_completed":0,"title":"친구만나기","desc":"친구와 만남약속","current_date":"2021/10/17 15:39:49","category":"일상","due_date":"2021/11/4","location":"카페","priority":"A"}
+{"id":44,"is_completed":0,"title":"장보기","desc":"장보러 마트가기","current_date":"2021/10/17 15:40:24","category":"기타","due_date":"2021/10/20","location":"마트","priority":"B"}
+{"id":45,"is_completed":0,"title":"책사기","desc":"읽고싶은 책 사기","current_date":"2021/10/17 15:41:14","category":"기타","due_date":"2021/11/1","location":"도서관","priority":"B"}
+{"id":46,"is_completed":0,"title":"10주차과제하기","desc":"컴구 과제하기","current_date":"2021/10/17 15:42:26","category":"과제","due_date":"2021/11/3","location":"집","priority":"A"}
+{"id":47,"is_completed":0,"title":"병원가기","desc":"병원가기","current_date":"2021/10/17 15:42:56","category":"기타","due_date":"2021/10/30","location":"병원","priority":"A"}
+{"id":48,"is_completed":0,"title":"책상정리하기","desc":"책상주변 정리하기","current_date":"2021/10/17 15:43:39","category":"일상","due_date":"2021/10/18","location":"기숙사","priority":"A"}
+{"id":49,"is_completed":0,"title":"통장만들기","desc":"통장만들기","current_date":"2021/10/17 15:45:28","category":"기타","due_date":"2021/10/20","location":"은행","priority":"A"}
+{"id":50,"is_completed":0,"title":"포항여행","desc":"포항 여행하기","current_date":"2021/10/17 15:46:23","category":"여행","due_date":"2021/11/11","location":"포항","priority":"C"}
+{"id":51,"is_completed":0,"title":"양말구매","desc":"인터넷으로 양말구매하기","current_date":"2021/10/17 15:47:32","category":"쇼핑","due_date":"2021/10/29","location":"온라인쇼핑몰","priority":"C"}
+{"id":52,"is_completed":0,"title":"형광등교체","desc":"형광등 새로 갈기","current_date":"2021/10/17 15:48:04","category":"기타","due_date":"2021/10/28","location":"기숙사","priority":"A"}
+{"id":53,"is_completed":0,"title":"소화기점검하기","desc":"소화기 점검하기","current_date":"2021/10/17 15:49:02","category":"기타","due_date":"2021/11/1","location":"집","priority":"A"}
+{"id":54,"is_completed":0,"title":"커튼교체하기","desc":"커튼 새로사고 교체하기","current_date":"2021/10/17 15:50:26","category":"일상","due_date":"2021/11/4","location":"집","priority":"B"}
+{"id":55,"is_completed":0,"title":"카페가기","desc":"카페가서 커피마시기","current_date":"2021/10/17 15:51:47","category":"일상","due_date":"2021/10/23","location":"카페","priority":"C"}
+{"id":56,"is_completed":0,"title":"프로젝트구상하기","desc":"프로젝트 구상하기","current_date":"2021/10/17 15:52:19","category":"과제","due_date":"2021/10/24","location":"집","priority":"A"}
+{"id":57,"is_completed":0,"title":"생수구매","desc":"생수 주문하기","current_date":"2021/10/17 15:53:08","category":"쇼핑","due_date":"2021/10/28","location":"온라인쇼핑몰","priority":"B"}
+{"id":58,"is_completed":0,"title":"백신맞기","desc":"2차백신 맞기","current_date":"2021/10/17 15:53:52","category":"기타","due_date":"2021/11/3","location":"학교","priority":"A"}
+{"id":59,"is_completed":0,"title":"볼펜구매","desc":"볼펜구매하기","current_date":"2021/10/17 15:55:04","category":"쇼핑","due_date":"2021/10/13","location":"문구점","priority":"C"}
+{"id":60,"is_completed":0,"title":"해외여행가기","desc":"해외여행가기","current_date":"2021/10/17 15:55:44","category":"여행","due_date":"2021/11/10","location":"해외","priority":"C"}
+{"id":61,"is_completed":0,"title":"분리수거하기","desc":"분리수거 하기","current_date":"2021/10/17 16:00:37","category":"일상","due_date":"2021/10/18","location":"집","priority":"B"}
+{"id":62,"is_completed":0,"title":"보고서제출","desc":"실프 보고서 제출하기","current_date":"2021/10/17 15:59:56","category":"과제","due_date":"2021/10/17","location":"집","priority":"A"}

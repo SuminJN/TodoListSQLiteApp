@@ -11,20 +11,40 @@ public class TodoItem {
     private String current_date;
     private String category;
     private String due_date;
+    private String location;
+    private String priority;
 
 
     public TodoItem(String title, String desc, 
-    		String category, String due_date){
+    		String category, String due_date, String location, String priority){
         this.title=title;
         this.desc=desc;
         SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
         this.current_date = f.format(new Date());
         this.category = category;
         this.due_date = due_date;
+        this.location = location;
+        this.priority = priority;
     }
+   
     
-    
-    public int getId() {
+    public String getPriority() {
+		return priority;
+	}
+
+	public void setPriority(String priority) {
+		this.priority = priority;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public int getId() {
 		return id;
 	}
 
@@ -83,9 +103,9 @@ public class TodoItem {
 	@Override
 	public String toString() {
 		if(is_completed == 0)
-			return id + " [" + category + "] " + title + " - " + desc + " - " + due_date + " - " + current_date;
+			return id + " [" + category + "] " + "- [" + priority + "]" + " - " + title + " - " + desc + " - " + due_date + " - " + current_date + " - " + location ;
 		else 
-			return id + " [" + category + "] " + title + "[V] - " + desc + " - " + due_date + " - " + current_date;
+			return id + " [" + category + "] " + "- [" + priority + "]" + " - " + title + "[V] - " + desc + " - " + due_date + " - " + current_date + " - " + location;
 	}
 	
 }

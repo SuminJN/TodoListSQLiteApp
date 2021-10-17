@@ -1,14 +1,13 @@
 package com.todo.service;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.Writer;
 import java.util.*;
 
+import com.google.gson.Gson;
 import com.todo.dao.TodoItem;
 import com.todo.dao.TodoList;
 
@@ -16,7 +15,7 @@ public class TodoUtil {
 
 	public static void createItem(TodoList l) {
 		
-		String title, desc, category, due_date;
+		String title, desc, category, due_date, location, priority;
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("[항목 추가]\n"
@@ -38,7 +37,14 @@ public class TodoUtil {
 		System.out.print("마감일자 > ");
 		due_date = sc.nextLine().trim();
 		
-		TodoItem t = new TodoItem(title, desc, category, due_date);
+		System.out.print("장소 > ");
+		location = sc.nextLine().trim();
+		
+		System.out.print("우선순위(A > B > C) > ");
+		priority = sc.nextLine().trim();
+		
+		
+		TodoItem t = new TodoItem(title, desc, category, due_date, location, priority);
 		if(l.addItem(t)>0)
 			System.out.println("추가되었습니다.");
 	}
@@ -49,15 +55,21 @@ public class TodoUtil {
 		
 		System.out.print("[항목 삭제]\n"
 				+ "삭제할 항목의 번호를 입력하시오 > ");
-		int index = sc.nextInt();
-		if(l.deleteItem(index) > 0)
-			System.out.println("삭제되었습니다.");
+		
+		String str = sc.nextLine();
+		String[] sp = str.split(" ");
+		
+		for(String index : sp) {
+			if(l.deleteItem(Integer.parseInt(index)) > 0)
+				System.out.println(Integer.parseInt(index) + "번 항목이 삭제되었습니다.");
+			
+		}
 	}
 
 
 	public static void updateItem(TodoList l) {
 		
-		String new_title, new_desc, new_category, new_due_date;
+		String new_title, new_desc, new_category, new_due_date, new_location, new_priority;
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("[항목 수정]\n"
@@ -66,15 +78,25 @@ public class TodoUtil {
 		
 		System.out.print("새 제목 > ");
 		new_title = sc.next().trim();
+		
 		System.out.print("새 카테고리 > ");
 		new_category = sc.next().trim();
 		sc.nextLine();
+		
 		System.out.print("새 내용 > ");
 		new_desc = sc.nextLine().trim();
+		
 		System.out.print("새 마감일자 > ");
 		new_due_date = sc.nextLine().trim();
 		
-		TodoItem t = new TodoItem(new_title, new_desc, new_category, new_due_date);
+		System.out.print("새 장소 > ");
+		new_location = sc.nextLine().trim();
+		
+		System.out.print("우선순위(A > B > C) > ");
+		new_priority = sc.nextLine().trim();
+		
+		TodoItem t = new TodoItem(new_title, new_desc, new_category, 
+				new_due_date, new_location, new_priority);
 		t.setId(index);
 		if(l.updateItem(t) > 0)
 			System.out.println("수정되었습니다.");
@@ -133,9 +155,56 @@ public class TodoUtil {
 		
 	}
 
-	public static void completeItem(TodoList l, int index) {
-		if(l.completeItem(index) > 0);
-			System.out.println("완료 체크하였습니다.");
+	public static void completeItem(TodoList l) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("[완료체크]\n"
+				+ "체크할 항목의 번호들을 입력하시오 > ");
+		
+		String str = sc.nextLine();
+		String[] sp = str.split(" ");
+		
+		for(String index : sp) {
+			if(l.completeItem(Integer.parseInt(index)) > 0);
+				System.out.println(Integer.parseInt(index) + "번 항목을 완료체크하였습니다.");
+		}
+	}
+	
+	public static void writeJson(TodoList l) {
+		
+		Gson gson = new Gson();
+		
+		try {
+			FileWriter writer = new FileWriter("todolist.txt");
+			
+			for (TodoItem item : l.getList()) {
+				String jsonStr = gson.toJson(item);
+				writer.write(jsonStr);
+				writer.write("\n");
+			}
+			writer.close();
+			System.out.println("파일에 저장되었습니다!");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void readJson(TodoList l) {
+		Gson gson = new Gson();
+		String jsonStr = null;
+		
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("todolist.txt"));
+			while( (jsonStr = br.readLine()) != null ) {
+				TodoItem item = gson.fromJson(jsonStr, TodoItem.class);
+				System.out.println(item);
+			}
+			br.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

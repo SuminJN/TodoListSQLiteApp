@@ -12,7 +12,7 @@ public class TodoMain {
 	
 		Scanner sc = new Scanner(System.in);
 		TodoList l = new TodoList();
-		l.importData("todolist.txt");
+//		l.importData("todolist.txt");
 		
 		boolean quit = false;
 		Menu.displaymenu();
@@ -70,14 +70,31 @@ public class TodoMain {
 				System.out.println("날짜역순으로 정렬했습니다.\n");
 				TodoUtil.listAll(l, "due_date", 0);
 				break;
+			
+			case "ls_prio":
+				System.out.println("우선순위로 정렬했습니다.\n");
+				TodoUtil.listAll(l, "priority", 1);
+				break;
+			
+			case "ls_prio_desc":
+				System.out.println("우선순위역순으로 정렬했습니다.\n");
+				TodoUtil.listAll(l, "priority", 0);
+				break;
 				
 			case "comp":
-				int index = sc.nextInt();
-				TodoUtil.completeItem(l, index);
+				TodoUtil.completeItem(l);
 				break;
 			
 			case "ls_comp":
 				TodoUtil.listCompletedAll(l);
+				break;
+				
+			case "writeJson":
+				TodoUtil.writeJson(l);
+				break;
+			
+			case "readJson":
+				TodoUtil.readJson(l);
 				break;
 
 			case "help":
